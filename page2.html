@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Escape Game Extérieur</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Lien vers votre fichier CSS -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="escape-game.html">Escape Game</a></li>
+                <li><a href="qui-nous-sommes.html">Qui nous sommes ?</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main>
+        <section class="contact-section">
+            <h1>Contactez-nous</h1>
+            <p>Vous avez des questions ? N'hésitez pas à nous contacter via le formulaire ci-dessous, ou par les moyens de contact indiqués.</p>
+
+            <!-- Formulaire de contact -->
+            <form action="send_message.php" method="POST">
+                <label for="name">Votre nom :</label>
+                <input type="text" id="name" name="name" required placeholder="Votre nom">
+
+                <label for="email">Votre email :</label>
+                <input type="email" id="email" name="email" required placeholder="Votre email">
+
+                <label for="message">Votre message :</label>
+                <textarea id="message" name="message" required placeholder="Votre message"></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+
+            <!-- Informations de contact -->
+            <div class="contact-info">
+                <h2>Nos coordonnées</h2>
+                <p>Adresse : 123 Rue de l'Escape, 06000 Nice, France</p>
+                <p>Téléphone : +33 1 23 45 67 89</p>
+                <p>Email : contact@escapegame.com</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Escape Game Extérieur - Tous droits réservés</p>
+    </footer>
+</body>
+</html>
